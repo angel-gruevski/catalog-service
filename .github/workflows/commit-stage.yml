@@ -1,11 +1,11 @@
 name: Commit Stage
 on: push
 jobs:
-  one:
+  build:
     name: Build and Test
     runs-on: ubuntu-22.04
     permissions:
-      contents: read
+      contents: none
       security-events: write
     steps:
       - name: Checkout source code
